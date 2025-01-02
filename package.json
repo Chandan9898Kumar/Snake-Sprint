@@ -2,6 +2,7 @@
   "name": "snakegame",
   "version": "0.1.0",
   "private": true,
+  "description": "This is a snake_game app built in React",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -9,7 +10,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.97.1",
+    "cross-env": "5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +37,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "keywords": [
+    "snake",
+    "game",
+    "Git",
+    "pwa",
+    "ssr",
+    "plugins",
+    "app"
+  ],
+  "author": "chandan Company, LLC",
+  "devDependencies": {
+    "ajv": "^7.2.4",
+    "webpack-cli": "^6.0.1"
+  },
+  "license": "MIT"
 }
