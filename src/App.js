@@ -1,11 +1,11 @@
+import React, { Component } from "react";
 import Swipe from "react-easy-swipe";
 import "./App.css";
 import "./utils.css";
-import React, { Component } from "react";
 
+import GameBoard from "./components/GameBoard/GameBoard";
 import ScoreBoard from "./components/ScoreBoard/ScoreBoard";
 import SnakeHeader from "./components/SnakeHeader/SnakeHeader";
-import GameBoard from "./components/GameBoard/GameBoard";
 class App extends Component {
   constructor() {
     super();
