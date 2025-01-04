@@ -5,17 +5,11 @@ import React, { Component } from "react";
 
 import ScoreBoard from "./components/ScoreBoard/ScoreBoard";
 import SnakeHeader from "./components/SnakeHeader/SnakeHeader";
+import GameBoard from "./components/GameBoard/GameBoard";
 class App extends Component {
   constructor() {
     super();
 
-    this.state = {
-      currentScore: 0,
-      bestScore: "--",
-      gameOverMsg: "",
-      gameOverDisplay: false,
-      gameMenuDisplay: true,
-    };
     this.foodClasses = [
       "blueberry",
       "cherry",
@@ -29,12 +23,37 @@ class App extends Component {
     this.snakeDelay = 100;
     this.allowSwipe = true;
     this.mode = "easy";
+
     this.eatAudio = new Audio(
       "https://github.com/diozz/snake-react-js/raw/main/src/sounds/eat.mp3"
     );
     this.gameOverAudio = new Audio(
       "https://github.com/diozz/snake-react-js/raw/main/src/sounds/game-over.mp3"
     );
+
+    // let snake = new Snake();
+
+    // snake.add(new Body([1, 3], "R"));
+    // snake.add(new Body([1, 2], "R"));
+    // snake.add(new Body([1, 1], "R"));
+
+    this.state = {
+      currentScore: 0,
+      bestScore: "--",
+      gameOverMsg: "",
+      // snake: snake,
+      foodCoordinate: [8, 18],
+      // foodClass: this.foodClasses[this.getRandomInt(0, this.foodClasses.length - 1)],
+      gameOverDisplay: false,
+      gameMenuDisplay: true,
+    };
+
+    // this.updateSnakeState = this.updateSnakeState.bind(this);
+    // this.onSwipeMove = this.onSwipeMove.bind(this);
+    // this.keyListner = this.keyListner.bind(this);
+    // this.startGame = this.startGame.bind(this);
+    // this.gameOver = this.gameOver.bind(this);
+    // this.endGame = this.endGame.bind(this);
   }
 
   render() {
@@ -64,7 +83,9 @@ class App extends Component {
               </div>
             </div>
 
-            <div className="border mt-2">Game Board</div>
+            <div className="border mt-2">
+              <GameBoard />
+            </div>
 
             {this.state.gameMenuDisplay && (
               <div className="border menu-overlay mt-2">

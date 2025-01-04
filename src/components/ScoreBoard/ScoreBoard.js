@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
-import "../../App.css";
-import "../../utils.css";
+// import "../../App.css";
+// import "../../utils.css";
 
 const ScoreBoard = ({ currentScore, bestScore }) => {
   return (
