@@ -4,7 +4,7 @@
 }
 
 .app-bg {
-  background-color: #282c34;
+  background-color: #d9dce2;
   height: 100%;
   min-width: 100%;
 }
@@ -28,4 +28,63 @@ body {
   background-color: #282c34;
   overscroll-behavior: contain;
   box-sizing: border-box;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.border {
+  border: #61dafb 1px solid;
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 1px 80px rgba(0, 0, 0, 0.12);
+}
+.titleContainer {
+  width: 80%;
+  padding-right: 10px;
+}
+.scoreContainer {
+  width: 20%;
+  padding-left: 10px;
+}
+.title {
+  font-family: snakeFont;
+  font-weight: bold;
+  color: #fff;
+  font-size: 45pt;
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.score {
+  font-family: snakeFont;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 40pt;
+  width: 100%;
+  min-height: 50px;
+  height: 50px;
+  user-select: none;
+}
+.best-score {
+  font-family: snakeFont;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 15pt;
+  width: 100%;
+  min-height: 30px;
+  height: 30px;
+  user-select: none;
+  position: relative;
+  top: -1px;
+}
+.subTitle {
+  color: rgb(167, 167, 167);
 }
