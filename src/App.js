@@ -84,7 +84,15 @@ class App extends Component {
             </div>
 
             <div className="border mt-2">
-              <GameBoard />
+              <GameBoard
+              boardWidth={this.boardHeight}
+              boardHeight={this.boardHeight}
+              currentScore={this.state.currentScore}
+              foodCoordinate={this.state.foodCoordinate}
+              foodClasses={this.state.foodClasses}
+              gameOverDisplay={this.state.gameOverDisplay}
+              
+               />
             </div>
 
             {this.state.gameMenuDisplay && (
