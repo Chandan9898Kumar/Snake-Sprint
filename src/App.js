@@ -83,17 +83,19 @@ class App extends Component {
               </div>
             </div>
 
-            <div className="border mt-2">
-              <GameBoard
-              boardWidth={this.boardHeight}
-              boardHeight={this.boardHeight}
-              currentScore={this.state.currentScore}
-              foodCoordinate={this.state.foodCoordinate}
-              foodClasses={this.state.foodClasses}
-              gameOverDisplay={this.state.gameOverDisplay}
-              
-               />
-            </div>
+            {!this.state.gameOverDisplay && !this.state.gameMenuDisplay && (
+              <div className="border mt-2">
+                <GameBoard
+                  boardWidth={this.boardWidth}
+                  boardHeight={this.boardHeight}
+                  snake={this.state.snake}
+                  currentScore={this.state.currentScore}
+                  foodCoordinate={this.state.foodCoordinate}
+                  foodClass={this.state.foodClass}
+                  gameOverDisplay={this.state.gameOverDisplay}
+                />
+              </div>
+            )}
 
             {this.state.gameMenuDisplay && (
               <div className="border menu-overlay mt-2">

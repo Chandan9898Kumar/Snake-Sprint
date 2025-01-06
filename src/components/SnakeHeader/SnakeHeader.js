@@ -1,6 +1,5 @@
 import React, { memo } from "react";
-// import "../../App.css";
-// import "../../utils.css";
+
 
 const SnakeHeader = () => {
   return (

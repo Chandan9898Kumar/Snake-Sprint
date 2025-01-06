@@ -1,6 +1,5 @@
 import React, { memo } from "react";
-// import "../../App.css";
-// import "../../utils.css";
+
 import BoardCell from "components/BoardCell/BoardCell";
 const GameBoard = (props) => {
 

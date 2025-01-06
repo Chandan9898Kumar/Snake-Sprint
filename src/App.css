@@ -301,7 +301,7 @@ body {
   .gameover-overlay,
   .menu-overlay {
     height: 450px;
-    top: -472px;
+    top: 0px;
   }
   .game-over-text {
     margin-bottom: 20px;
