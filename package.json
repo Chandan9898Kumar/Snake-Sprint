@@ -7,18 +7,18 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^3.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-easy-swipe": "^0.0.21",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "webpack": "^5.97.1",
-    "cross-env": "5.2.0",
-    "gh-pages": "^3.2.3",
-    "react-easy-swipe": "^0.0.21"
+    "webpack": "^5.97.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "winBuild": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -54,6 +54,7 @@
   "author": "chandan Company, LLC",
   "devDependencies": {
     "ajv": "^7.2.4",
+    "cross-env": "^7.0.3",
     "webpack-cli": "^6.0.1"
   },
   "license": "MIT"
