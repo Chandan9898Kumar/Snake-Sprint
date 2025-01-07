@@ -454,18 +454,21 @@ class App extends Component {
                 </div>
                 <div className="flex mt-2">
                   <span
+                    role="button"
                     onClick={this.startGame.bind(this, 200)}
                     className="snakeButton mr-1"
                   >
                     EASY
                   </span>
                   <span
+                    role="button"
                     onClick={this.startGame.bind(this, 120)}
                     className="snakeButton mr-1 ml-1"
                   >
                     MEDIUM
                   </span>
                   <span
+                    role="button"
                     onClick={this.startGame.bind(this, 75)}
                     className="snakeButton ml-1"
                   >
@@ -480,6 +483,7 @@ class App extends Component {
                 <div className="game-over-text">{this.state.gameOverMsg}</div>
                 <div className="flex mt-2">
                   <span
+                    role="button"
                     onClick={this.endGame}
                     className="snakeButton mr-1 ml-1"
                   >

@@ -29,10 +29,11 @@ body {
   color: #61dafb;
 }
 .border {
-  border: 1px solid  #4a6971;
+  border: 1px solid #4a6971;
   border-radius: 5px;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-      0 12.5px 10px rgba(0, 0, 0, 0.06), 0 1px 80px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 1px 80px rgba(0, 0, 0, 0.12);
 }
 .titleContainer {
   width: 80%;
@@ -149,19 +150,24 @@ body {
   font-family: snakeFont;
   font-weight: bold;
   font-size: 25pt;
-  color: #61dafb;
   padding: 15px 10px;
   border-radius: 10px;
-  border: 0.5px solid #61dafb;
-  background-color: #282c34;
+  background: transparent;
+  border: none;
+  color: wheat;
   user-select: none;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-      0 12.5px 10px rgba(0, 0, 0, 0.06), 0 1px 80px rgba(0, 0, 0, 0.12);
   transition: all 0.85s;
 }
 .snakeButton:hover {
   color: #282c34;
-  background-color: #61dafb;
+  background-color: #ffffff;
+}
+
+.snakeFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .board-cell {
   display: flex;
@@ -239,10 +245,10 @@ body {
 }
 @keyframes spin {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -256,88 +262,88 @@ body {
 /* Mobile */
 @media (min-width: 0) {
   .container {
-      width: 293px;
-      height: 324px;
+    width: 293px;
+    height: 324px;
   }
   .board-cell {
-      width: 14.5px;
-      height: 14.5px;
-      min-width: 14.5px;
+    width: 14.5px;
+    height: 14.5px;
+    min-width: 14.5px;
   }
   .snake-body {
-      border-radius: 3px;
-      width: 90%;
-      height: 90%;
+    border-radius: 3px;
+    width: 90%;
+    height: 90%;
   }
   .game-board {
-      width: 296px;
+    width: 296px;
   }
   .menu-food {
-      width: 30px;
-      height: 30px;
+    width: 30px;
+    height: 30px;
   }
   .gameover-overlay,
   .menu-overlay {
-      height: 218px;
-      top: -240px;
+    height: 218px;
+    top: -240px;
   }
   .game-over-text {
-      font-size: 40pt;
+    font-size: 40pt;
   }
   .snakeButton {
-      font-size: 15pt;
-      padding: 6px 10px;
+    font-size: 15pt;
+    padding: 6px 10px;
   }
   .scoreContainer {
-      width: 30%;
+    width: 30%;
   }
   .best-score {
-      font-size: 14pt;
+    font-size: 14pt;
   }
   .subTitle {
-      font-size: 12pt;
+    font-size: 12pt;
   }
 }
 /* Desktop */
 @media (min-width: 969px) {
   .container {
-      width: 602px;
-      height: 555px;
+    width: 602px;
+    height: 555px;
   }
   .snake-body {
-      border-radius: 10px;
-      width: 90%;
-      height: 90%;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
   }
   .board-cell {
-      width: 30px;
-      min-width: 30px;
-      height: 30px;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
   }
   .game-board {
-      width: 604px;
+    width: 604px;
   }
   .menu-food {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
   }
   .gameover-overlay,
   .menu-overlay {
-      height: 450px;
-      top: -472px;
+    height: 450px;
+    top: -472px;
   }
   .game-over-text {
-      margin-bottom: 20px;
-      font-size: 80pt;
+    margin-bottom: 20px;
+    font-size: 80pt;
   }
   .snakeButton {
-      font-size: 25pt;
+    font-size: 25pt;
   }
   .best-score {
-      font-size: 18pt;
+    font-size: 18pt;
   }
   .subTitle {
-      font-size: 14pt;
+    font-size: 14pt;
   }
 }
